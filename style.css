@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 @font-face {
@@ -14,7 +15,7 @@
 }
 
 #left-section {
-    width: 30%;
+    width: 40%;
 }
 
 img.background {
@@ -27,7 +28,7 @@ img.background {
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
-    width: 30%;
+    width: 40%;
     height: 150px;
     justify-content: center;
     align-items: center;
@@ -45,6 +46,9 @@ img.logo {
     font-size: 100px;
 }
 
+#right-section {
+    width: 40%;
+}
 #photo-credit{
     position: absolute;
     bottom: 15px;
@@ -56,6 +60,96 @@ img.logo {
     justify-content: center;
 }
 
-a:link {
+#photo-credit .link:link,
+#photo-credit .link:visited {
     color: white;
+}
+
+#introduction {
+    padding: 100px 50px;
+    height: 140px;
+    font-weight: bold;
+    width: 850px;
+
+}
+
+#introduction p, #signup h3{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+#right-section {
+    width: 60%;
+}
+
+#signup {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.15);
+}
+
+#signup h3{
+    padding: 0 50px;
+    font-weight: 600;
+    color: black;
+}
+
+.form-container{
+    display: flex;
+    height: 300px;
+    padding-top: 20px;
+}
+
+.form-group{
+    height: 300px;
+    display:flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.form-group label {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#create-account {
+    background-color: #596D48;
+    color: whitesmoke;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#submit p {
+margin-left: 50px;
+margin-top: 50px;    
+}
+
+#submit a{
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#password:invalid, #confirm-password:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 1px solid blue;
 }
