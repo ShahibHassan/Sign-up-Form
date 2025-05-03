@@ -146,10 +146,16 @@ margin-top: 50px;
     font-weight: bold;
 }
 
-#password:invalid, #confirm-password:invalid {
-    border: 1px solid red;
+.form-group input:invalid {
+    border-width: 2px;
+    border-color: red;
+    outline:none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
 }
 
-input:focus {
-    border: 1px solid blue;
+.form-group input:focus {
+    border-width: 2px;
+    border-color: blue;
+    outline: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
 }
